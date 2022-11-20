@@ -1,5 +1,47 @@
 body{
-    background-color: black;
-    color:white;
-    text-align: center;
+    background-color: #E2BDFF;
+    color:black;
+}
+
+.logo{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-top:1vw;
+}
+
+.APF{
+    float:right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-right: 2vw;
+    word-spacing: 2vw;
+    margin-top:1vw;
+}
+.welcome{
+    margin: auto;
+    text-align:center;
+    margin-top:15vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    color: #8B12EA;
+    text-align: left;
+    margin-left: 30vw;
+   
+}
+
+.sulis{
+    display: inline-block;
+    border: 1.9vw solid #8B12EA;
+    border-radius: 30px;
+    line-height: 0px;
+    color:#E2BDFF;
+}
+.welcomeB{
+    font-size: 4vw;
+    display: inline-block;
 }
