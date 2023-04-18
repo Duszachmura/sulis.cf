@@ -10,6 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="favicon.png">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+            function onSubmit(token) {
+              document.getElementById("contact_form").submit();
+            }
+          </script>
     </head>
     <body>
         <div class="box">
@@ -33,12 +39,15 @@
                 <a href="#about">About</a>
             </div>
             <div id="about">
-                <form name="contact" method="post" data-netlify="true" data-netlify-recaptcha="true">
+                <form name="contact" method="post" data-netlify="true" data-netlify-recaptcha="true" id="contact_form">
                     <label>Your Name: </label><input type="text" name="name">
                     <label>Your Email: </label><input type="email" name="email">
                     <label>Message: </label><textarea name="message"></textarea>
                     <div data-netlify-recaptcha="true"></div>
-                    <button type="submit">Send</button>
+                    <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
                 </form>
                 
 
