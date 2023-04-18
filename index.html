@@ -33,10 +33,11 @@
                 <a href="#about">About</a>
             </div>
             <div id="about">
-                <form name="contact" method="post" data-netlify="true">
+                <form name="contact" method="post" data-netlify="true" data-netlify-recaptcha="true">
                     <label>Your Name: </label><input type="text" name="name">
                     <label>Your Email: </label><input type="email" name="email">
                     <label>Message: </label><textarea name="message"></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <button type="submit">Send</button>
                 </form>
                 
